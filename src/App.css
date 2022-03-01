@@ -37,7 +37,7 @@
 }
 .fa-arrow-left{
   cursor: pointer;
-  color: black;
+  color: blue;
 }
 .lefttext{
   font-size: 15px;
@@ -80,9 +80,9 @@ td .shopp{
   align-items: center;
 }
 .shopp .input{
-  border: 1px solid #000;
+  border: 1px solid blue;
   outline: none;
-  color:black;
+  color:blue;
   text-align: center;
   font-size: 14px;
   font-weight: normal;
@@ -139,6 +139,10 @@ td .fa-trash-o:hover{
   margin-top: 20px;
   text-align: right;
 }
+.w-100{
+  width: 100%;
+  height: 70vh;
+}
 a{
   text-decoration: none;
   border: none;
@@ -151,6 +155,10 @@ a{
 td {
  width: 90%;
  text-align: center;
+}
+.d-block{
+  width:90%;
+  height: 80vh;
 }
   @media screen and (max-width: 916px) {
     .row{

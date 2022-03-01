@@ -17,7 +17,7 @@ const Mainpage = () => {
   return (
     <Router>
         <Navbar title="Technical krish"/>
-        <Carosels />
+
         <Routes>
             <Route path="/" element = { <Imageslider />}/>
             <Route path="/About" element = { <About />}/>

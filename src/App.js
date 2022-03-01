@@ -6,8 +6,8 @@ import Shop from './Components/Shop';
 const App = () => {
   return (
     <div>
-      {/* <Mainpage /> */}
-      <Shop />
+      <Mainpage />
+      {/* <Shop /> */}
     </div>
   )
 }

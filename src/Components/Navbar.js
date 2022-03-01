@@ -12,7 +12,7 @@ path = location.pathname.replace("/","");
     console.log(path)
     const [color,setcolor] = useState({
         bgcolor:"black",
-        color:"white",
+        color:"red",
         text:"disable dark mode",
     })
     
@@ -34,12 +34,13 @@ path = location.pathname.replace("/","");
         }else{
             setcolor({
                 bgcolor:"black",
-                color:"white",
+                color:"red",
                 text:"disable dark mode",
               })
         }
   
         document.body.style.backgroundColor = color.bgcolor;
+        document.body.style.color = color.color;
        console.log(color.bgcolor)
     }
    
