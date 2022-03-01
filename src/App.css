@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+.slick-slider button{
+  background-color: black;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.slick-slider button:hover{
+  background-color: black;
+}
+.slick-arrow{
+  background-color: blue;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card{
+  margin: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.slick-dots .slick-active ,button{
+  border: 2px solid black;
+  color:white;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3px;
+}
+.navcontainer{
+ width:80%;
+ margin:0 auto;
+ min-height: 60px;
+}
+.navbar{
+  border-bottom: 1px solid rgb(200, 201, 202);
+ min-height: 30px;
+ display: flex;
+ align-items: center;
+ min-height: 60px;
+ justify-content: space-between;
+}
+.fa-arrow-left{
+  cursor: pointer;
+  color: black;
+}
+.lefttext{
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: gray;
+  margin-left: 10px;
+}
+.tables{
+  background-color: #f1f1f1;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+  object-fit: cover;
+  width: 130px;
+  height: 130px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+td .text{
+  text-align: left;
+}
+.text h2{
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+span{
+  color:gray;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 13px;
+}
+td .shopp{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.shopp .input{
+  border: 1px solid #000;
+  outline: none;
+  color:black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+  width: 100px;
+  border-radius: 30px;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  height: 25px;
+}
+.shopp .btn{
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+tr{
+  flex:1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+td .fa-trash-o{
+  font-size: 20px;
+  transition: all 250ms ease;
+}
+td .fa-trash-o:hover{
+  transform: scale(1.09);
+  color: gray;
+  cursor: pointer;
+}
+.cshop{
+  width: 100%;
+  overflow-y: auto;
+  height: 50%;
+  padding: 10px 30px 0px 30px;
+}
+.totalcart{
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  margin-top: 20px;
+  text-align: right;
+}
+a{
+  text-decoration: none;
+  border: none;
+}
+.row{
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto auto;
+}
+td {
+ width: 90%;
+ text-align: center;
+}
+  @media screen and (max-width: 916px) {
+    .row{
+      display: grid;
+      width: 90%;
+      grid-template-columns: auto;
+    }
+    .category{
+      display: grid;
+      margin-bottom: 10px;
+      grid-template-columns:  auto auto;
+    }
 }
